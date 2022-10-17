@@ -6,7 +6,7 @@ function setup() {
   gradient = createLinearGradient(0, 200);
   // add some colors
   // at 0% make it lightblue, then at 50% make it pink, and at 100% make it magenta
-  gradient.colors(0, "lightblue", 0.5, "pink", 1, "magenta");
+  gradient.colors(0, "lightblue", 0.5, "pink", 1);
 }
 
 function draw() {
