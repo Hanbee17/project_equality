@@ -1,1 +1,1 @@
-# project_eqaulity
+# project_equality
