@@ -1,11 +1,15 @@
-let cvn;
+let gradient;
 
 function setup() {
-  cvn = createCanvas(windowWidth, windowHeight*0.8);
-  cvn.parent('canvas');
+  createCanvas(windowWidth, 650);
+  gradient = createLinearGradient(0, 900);
+  gradient.colors(0.3, "lightblue", 0.9, "pink");
 }
 
 function draw() {
   background(255);
-  rect(0, 0, 200, 200);
+
+  fillGradient(gradient);
+  rect(-5, 0, windowWidth, 600);
+  noStroke();
 }
