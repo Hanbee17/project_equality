@@ -1,15 +1,40 @@
-let gradient;
+//let initialButton;
+let pageState = 'first';
 
 function setup() {
-  createCanvas(800, 650);
-  gradient = createLinearGradient(0, 900);
-  gradient.colors(0.3, "lightblue", 0.9, "pink");
+  cvn = createCanvas(windowWidth, windowHeight * 0.8);
 }
 
-function draw() {
-  background(255);
+// function startButton() {
+// initialButton.locate(windowWidth * 0.445, windowHeight * 0.35);
+// }
 
-  fillGradient(gradient);
-  rect(0, 0, 800, 600);
-  noStroke();
+function draw() {
+
+  switch (pageState) {
+    case 'title':
+      firstScreen();
+      break;
+    }
+
+  //initialButton.draw();
+}
+
+// function intialButtons() {
+//   initialButton = new Clickable();
+//   initialButton.locate(-400, -500);
+//   initialButton.resize(windowWidth * 1, windowWidth * 1);
+//   initialButton.text = "         ";
+//   initialButton.color = "#00000000";
+//   initialButton.strokeWeight = 00;
+//   initialButton.onRelease = function() {
+//     pageState = 'main'
+//     initialButton.locate(-400, -500);
+//   }
+// }
+
+function firstScreen() {
+  createCanvas(windowWidth * 1, windowHeight * 2.6);
+  initialButton();
+
 }
