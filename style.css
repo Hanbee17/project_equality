@@ -9,10 +9,20 @@ main{
   text-align: center;
 }
 
-body{
+html, body{
+  text-align: center;
+  padding: 0px;
+}
+
+#canvasPage {
   text-align: center;
 }
 
-#cvn {
+footer {
   text-align: center;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 14px;
+  color: #9FAABC;
+  margin-top: 30px;
+  margin-bottom: 20px;
 }
