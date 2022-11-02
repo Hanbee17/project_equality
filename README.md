@@ -1,7 +1,10 @@
 # Project Equality
 The idea of this project was inspired by [Manifesta Utilità](https://www.behance.net/gallery/2598519/Manifesta-Utilita-human-rights).
 
-##Artist's Statement
+[Click to Visit](https://github.com/Hanbee17/project_equality/deployments/activity_log?environment=github-pages)
+
+## Artist's Statement
+
 This project was based on the idea of equality vs equality.
 If the game was too easy for you, it means you were privileged.
 
