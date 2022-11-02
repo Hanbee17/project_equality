@@ -69,8 +69,6 @@ function keyPressed() {
    }
 }
 
-
-
 function intialButtons() {
   initialButton = new Clickable();
   initialButton.locate(-400, -500);
@@ -138,10 +136,41 @@ function femaleButtons() {
 }
 
 function lastPage() {
-  createCanvas(windowWidth * 1, windowHeight * 1);
-  background("#4E2E60");
-  fill(255);
+  createCanvas(windowWidth * 1, windowHeight * 1.3);
+  background("#5E548E");
+  fill("#A2D2FF");
   textSize(50);
   textFont('Bebas Neue');
-  text('This is Last Page.', width*0.5, height*0.1 );
+  textAlign(CENTER);
+  text('Artist Statement', width*0.5, height*0.08 );
+
+  fill(255);
+  textSize(30);
+  textFont('Barlow Condensed');
+  text('This project was based on the idea of equality vs equality.', width*0.5, height*0.15 );
+  text('If the game was too easy for you, it means you were privileged.', width*0.5, height*0.18 );
+
+  text('"Someone has to work harder to get the same result."', width*0.5, height*0.23 );
+  text('Even though, we believe it is all the same rights and same opportunities.', width*0.5, height*0.26 );
+  text('Some start this game with big disadvantages or penalties with them.', width*0.5, height*0.29 );
+
+  text('Michael Sandel asks the same thing in the book, The Tyranny of Merit.', width*0.5, height*0.34 );
+
+  text('Is the society we live in really fair?', width*0.5, height*0.39 );
+  text('Is it really fair to discriminate based on individual abilities?', width*0.5, height*0.42 );
+  text('Does our life depend only on ability?', width*0.5, height*0.45 );
+
+  text('No one can be confident that I have accomplished everything in my life entirely', width*0.5, height*0.50 );
+  text('with my own strength and my own abilities.', width*0.5, height*0.53 );
+  text('We all know well that even my birth is not my ability.', width*0.5, height*0.56 );
+
+  text('We ourselves, our consciousness, our words, and our actions,', width*0.5, height*0.61 );
+  text('must become the social safety net itself.', width*0.5, height*0.64 );
+
+  fill("#A2D2FF");
+  textSize(40);
+  textFont('Bebas Neue');
+  textAlign(CENTER);
+  text('“The meritocratic ideal is not a remedy for inequality; it is a justification of inequality.”', width*0.5, height*0.8 );
+  text('- Michael J. Sandel ', width*0.5, height*0.85 );
 }

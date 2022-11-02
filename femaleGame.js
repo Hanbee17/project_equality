@@ -6,9 +6,7 @@ function titleScreen2() {
   textSize(75);
   textFont('Bebas Neue');
   textAlign(CENTER);
-  text('The Void', width*0.5, height*0.33);
-  textSize(25);
-  text('Press "F" To Start Game', width*0.5, height*0.66);
+  text('Press "F" To Start Game', width*0.5, height*0.5);
 }
 
 //Function for rendering the main game play screen.
@@ -20,7 +18,7 @@ function gameStage2() {
   text('Avoid the circles!', width*0.5, height*0.1);
   ellipseMode(CENTER);
   noStroke();
-  
+
   ellipse(width/2, height/2, 40);
   ellipse(200, 300, 40);
   ellipse(400, 500, 50);

@@ -6,9 +6,7 @@ function titleScreen() {
   textSize(75);
   textFont('Bebas Neue');
   textAlign(CENTER);
-  text('The Void', width*0.5, height*0.33);
-  textSize(25);
-  text('Press "S" To Start Game', width*0.5, height*0.66);
+  text('Press "S" To Start Game', width*0.5, height*0.5);
 }
 
 //Function for rendering the main game play screen.
