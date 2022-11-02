@@ -52,21 +52,21 @@ function draw() {
 }
 
 function keyReleased() {
-  if (pageState === 'malegame' || pageState === 'femalegame') {
-    if (key === 's') {
+  if (pageState === 'malegame' || pageState === 'femalegame' || pageState === 'gameover') {
+    if (key === 's' || key === 'S') {
       pageState = 'maleMainGame';
-    } else if (key === 'f') {
+    } else if (key === 'f' || key === 'S') {
       pageState = 'femaleMainGame';
     }
-}
+  }
 }
 
 function keyPressed() {
-   if (pageState === 'gameover') {
-     if (key === 'w') {
-       pageState = 'artsistStatement';
-     }
-   }
+  if (pageState === 'gameover') {
+    if (key === 'w') {
+      pageState = 'artsistStatement';
+    }
+  }
 }
 
 function intialButtons() {
@@ -87,14 +87,13 @@ function firstScreen() {
   createCanvas(windowWidth * 1, windowHeight * 0.82);
   background(220);
   startButton();
-  //let p = createP(textFront);
-  //p.id('myFrontText');
+  let p = createP(textFront);
+  p.id('myFrontText');
 }
 
 function questionPage() {
   createCanvas(windowWidth * 1, windowHeight * 1);
   background("#5E548E");
-
   maleBut.locate(windowWidth * 0.25, windowHeight * 0.25);
   femaleBut.locate(windowWidth * 0.55, windowHeight * 0.25);
 }
@@ -112,8 +111,9 @@ function maleButtons() {
   maleBut.textScaled = false;
   maleBut.onRelease = function() {
     pageState = 'malegame'
-    maleBut.locate(-400, -500);
-    femaleBut.locate(-400, -500);
+    maleBut.locate(-4000, -5000);
+    femaleBut.locate(-4000, -5000);
+    initialButton.locate(-4000, -5000);
   }
 }
 
@@ -130,8 +130,9 @@ function femaleButtons() {
   femaleBut.textScaled = false;
   femaleBut.onRelease = function() {
     pageState = 'femalegame'
-    femaleBut.locate(-400, -500);
-    maleBut.locate(-400, -500);
+    femaleBut.locate(-4000, -5000);
+    maleBut.locate(-4000, -5000);
+    initialButton.locate(-4000, -5000);
   }
 }
 
@@ -142,35 +143,35 @@ function lastPage() {
   textSize(50);
   textFont('Bebas Neue');
   textAlign(CENTER);
-  text('Artist Statement', width*0.5, height*0.08 );
+  text('Artist Statement', width * 0.5, height * 0.08);
 
   fill(255);
   textSize(30);
   textFont('Barlow Condensed');
-  text('This project was based on the idea of equality vs equality.', width*0.5, height*0.15 );
-  text('If the game was too easy for you, it means you were privileged.', width*0.5, height*0.18 );
+  text('This project was based on the idea of equality vs equality.', width * 0.5, height * 0.15);
+  text('If the game was too easy for you, it means you were privileged.', width * 0.5, height * 0.18);
 
-  text('"Someone has to work harder to get the same result."', width*0.5, height*0.23 );
-  text('Even though, we believe it is all the same rights and same opportunities.', width*0.5, height*0.26 );
-  text('Some start this game with big disadvantages or penalties with them.', width*0.5, height*0.29 );
+  text('"Someone has to work harder to get the same result."', width * 0.5, height * 0.23);
+  text('Even though, we believe it is all the same rights and same opportunities.', width * 0.5, height * 0.26);
+  text('Some start this game with big disadvantages or penalties with them.', width * 0.5, height * 0.29);
 
-  text('Michael Sandel asks the same thing in the book, The Tyranny of Merit.', width*0.5, height*0.34 );
+  text('Michael Sandel asks the same thing in the book, The Tyranny of Merit.', width * 0.5, height * 0.34);
 
-  text('Is the society we live in really fair?', width*0.5, height*0.39 );
-  text('Is it really fair to discriminate based on individual abilities?', width*0.5, height*0.42 );
-  text('Does our life depend only on ability?', width*0.5, height*0.45 );
+  text('Is the society we live in really fair?', width * 0.5, height * 0.39);
+  text('Is it really fair to discriminate based on individual abilities?', width * 0.5, height * 0.42);
+  text('Does our life depend only on ability?', width * 0.5, height * 0.45);
 
-  text('No one can be confident that I have accomplished everything in my life entirely', width*0.5, height*0.50 );
-  text('with my own strength and my own abilities.', width*0.5, height*0.53 );
-  text('We all know well that even my birth is not my ability.', width*0.5, height*0.56 );
+  text('No one can be confident that I have accomplished everything in my life entirely', width * 0.5, height * 0.50);
+  text('with my own strength and my own abilities.', width * 0.5, height * 0.53);
+  text('We all know well that even my birth is not my ability.', width * 0.5, height * 0.56);
 
-  text('We ourselves, our consciousness, our words, and our actions,', width*0.5, height*0.61 );
-  text('must become the social safety net itself.', width*0.5, height*0.64 );
+  text('We ourselves, our consciousness, our words, and our actions,', width * 0.5, height * 0.61);
+  text('must become the social safety net itself.', width * 0.5, height * 0.64);
 
   fill("#A2D2FF");
   textSize(40);
   textFont('Bebas Neue');
   textAlign(CENTER);
-  text('“The meritocratic ideal is not a remedy for inequality; it is a justification of inequality.”', width*0.5, height*0.8 );
-  text('- Michael J. Sandel ', width*0.5, height*0.85 );
+  text('“The meritocratic ideal is not a remedy for inequality; it is a justification of inequality.”', width * 0.5, height * 0.8);
+  text('- Michael J. Sandel ', width * 0.5, height * 0.85);
 }
