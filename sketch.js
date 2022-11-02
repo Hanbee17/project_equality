@@ -97,6 +97,11 @@ function firstScreen() {
   background(220);
   startButton();
   textSize(50);
+  textAlign(CENTER);
+  fill(255);
+  textSize(100);
+  textFont('Bebas Neue');
+  text('Click Anywhere To Begin', width * 0.5, height * 0.5);
   // let p = createP(textFront);
   // p.id('myFrontText');
 }
