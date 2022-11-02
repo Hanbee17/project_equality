@@ -1,65 +1,48 @@
-var screen = 0;
-var y=-20;
-var x=200;
-var speed = 2;
-var score= 0;
 
-function setup() {
+function titleScreen() {
   createCanvas(windowWidth * 1, windowHeight * 1);
+  background("#A2D2FF");
+  fill(255);
+  textSize(75);
+  textFont('Bebas Neue');
+  textAlign(CENTER);
+  text('The Void', width*0.5, height*0.33);
+  textSize(25);
+  text('Press "S" To Start Game', width*0.5, height*0.66);
 }
 
-function maleGamePage() {
-	if(screen == 0){
-    maleGamePage()
-  }else if(screen == 1){
-  	gameOn()
-  }else if(screen==2){
-  	endScreen()
+//Function for rendering the main game play screen.
+function gameStage1() {
+  background('#003566');
+  fill("#A2D2FF");
+  textSize(50);
+  textAlign(CENTER);
+  text('Avoid the circle!', width*0.5, height*0.1);
+  ellipseMode(CENTER);
+  noStroke();
+  ellipse(width/2, height/2, 40);
+  stroke(255);
+  fill(255);
+  rectMode(CENTER);
+  rect(mouseX, mouseY, 50);
+
+  //Checking for lose state (touching circle).
+  if (mouseX > (width/2)-20 && mouseX < (width/2)+20) {
+    if (mouseY > (height/2)-20 && mouseY < (height/2)+20) {
+      pageState = 'gameover';
+    }
   }
 }
 
-function gameOn(){
-	background("#A2D2FF");
-  text("score = " + score, 30,20)
-  ellipse(x,y,20,20)
-  rectMode(CENTER)
-  rect(mouseX,height-10,50,30)
-	y+= speed;
-  if(y>height){
-  	screen =2
-	 }
-  if(y>height-10 && x>mouseX-20 && x<mouseX+20){
-  	y=-20
-    speed+=.5
-    score+= 1
-  }
-	if(y==-20){
-  	pickRandom();
-  }
-}
+//Function for rendering game over screen.
+function gameOver() {
+  background("#CDB4DB");
+  stroke(255);
+  fill(255);
+  textSize(75);
+  textAlign(CENTER);
+  text('GAME OVER', width*0.5, height*0.33);
+  textSize(25);
+  text("Press 'W' To Go to Artist's Statement", width*0.5, height*0.66);
 
-function pickRandom(){
-	x= random(20,width-20)
-}
-
-function endScreen(){
-		background(150)
-		textAlign(CENTER);
-		text('GAME OVER', width / 2, height / 2)
-  	text("SCORE = " + score, width / 2, height / 2 + 20)
-		text('click to play again', width / 2, height / 2 + 40);
-}
-
-function mousePressed(){
-	if(screen==0){
-  	screen=1
-  }else if(screen==2){
-  	screen=0
-  }
-}
-
-function reset(){
-	  score=0;
-  	speed=2;
-  	y=-20;
 }

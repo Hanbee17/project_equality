@@ -28,13 +28,48 @@ function draw() {
       questionPage();
       break;
     case 'malegame':
-      maleGamePage();
+      titleScreen();
       break;
-    }
-    initialButton.draw();
-    maleBut.draw();
-    femaleBut.draw();
+    case 'maleMainGame':
+      gameStage1();
+      break;
+    case 'gameover':
+      gameOver();
+      break;
+    case 'femalegame':
+      titleScreen2();
+      break;
+    case 'femaleMainGame':
+      gameStage2();
+      break;
+    case 'artsistStatement':
+      lastPage();
+      break;
+  }
+  initialButton.draw();
+  maleBut.draw();
+  femaleBut.draw();
 }
+
+function keyReleased() {
+  if (pageState === 'malegame' || pageState === 'femalegame') {
+    if (key === 's') {
+      pageState = 'maleMainGame';
+    } else if (key === 'f') {
+      pageState = 'femaleMainGame';
+    }
+}
+}
+
+function keyPressed() {
+   if (pageState === 'gameover') {
+     if (key === 'w') {
+       pageState = 'artsistStatement';
+     }
+   }
+}
+
+
 
 function intialButtons() {
   initialButton = new Clickable();
@@ -69,8 +104,8 @@ function questionPage() {
 function maleButtons() {
   maleBut = new Clickable();
   maleBut.locate(-400, -500);
-  maleBut.resize(windowWidth * 0.15, windowHeight *0.4);
-  maleBut.color = "#E0B1CB";
+  maleBut.resize(windowWidth * 0.15, windowHeight * 0.4);
+  maleBut.color = "#A2D2FF";
   maleBut.textColor = "#5E548E";
   maleBut.strokeWeight = 0;
   maleBut.text = "MALE";
@@ -87,7 +122,7 @@ function maleButtons() {
 function femaleButtons() {
   femaleBut = new Clickable();
   femaleBut.locate(-400, -500);
-  femaleBut.resize(windowWidth * 0.15, windowHeight *0.4);
+  femaleBut.resize(windowWidth * 0.15, windowHeight * 0.4);
   femaleBut.color = "#E0B1CB";
   femaleBut.textColor = "#5E548E";
   femaleBut.strokeWeight = 0;
@@ -96,8 +131,17 @@ function femaleButtons() {
   femaleBut.textFont = "Bebas Neue";
   femaleBut.textScaled = false;
   femaleBut.onRelease = function() {
-    pageState = 'main'
+    pageState = 'femalegame'
     femaleBut.locate(-400, -500);
     maleBut.locate(-400, -500);
   }
+}
+
+function lastPage() {
+  createCanvas(windowWidth * 1, windowHeight * 1);
+  background("#4E2E60");
+  fill(255);
+  textSize(50);
+  textFont('Bebas Neue');
+  text('This is Last Page.', width*0.5, height*0.1 );
 }
