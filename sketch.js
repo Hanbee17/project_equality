@@ -96,6 +96,7 @@ function firstScreen() {
   createCanvas(windowWidth * 1, windowHeight * 0.82);
   background(220);
   startButton();
+  textSize(50);
   // let p = createP(textFront);
   // p.id('myFrontText');
 }
@@ -103,6 +104,10 @@ function firstScreen() {
 function questionPage() {
   createCanvas(windowWidth * 1, windowHeight * 1);
   background("#5E548E");
+  textFont('Bebas Neue');
+  textAlign(CENTER);
+  fill(255);
+  text('Are you...', width * 0.5, height * 0.2);
   maleBut.locate(windowWidth * 0.25, windowHeight * 0.25);
   femaleBut.locate(windowWidth * 0.55, windowHeight * 0.25);
 }
