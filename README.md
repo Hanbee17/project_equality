@@ -1,7 +1,7 @@
 # Project Equality
 The idea of this project was inspired by [Manifesta Utilità](https://www.behance.net/gallery/2598519/Manifesta-Utilita-human-rights).
 
-Live Website: [Click to Visit](https://github.com/Hanbee17/project_equality/deployments/activity_log?environment=github-pages)
+Live Website: [Click to Visit](https://hanbee17.github.io/project_equality/)
 
 ## Artist's Statement
 
