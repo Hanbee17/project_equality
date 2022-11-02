@@ -36,4 +36,4 @@ Those who know a little more should help those who know less. If knowing a littl
 
 We ourselves, our consciousness, our words, and our actions, must become the social safety net itself. Only then can you, yourself, your loved ones, and your precious friends be saved from a quick death.
 
-**“The meritocratic ideal is not a remedy for inequality; it is a justification of inequality.” ** - Michael J. Sandel
+"**The meritocratic ideal is not a remedy for inequality; it is a justification of inequality.**" - Michael J. Sandel
