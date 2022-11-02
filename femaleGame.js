@@ -23,7 +23,7 @@ function gameStage2() {
     timer--;
   }
   if (timer == 0) {
-    pageState = 'gameover';
+    pageState = 'gameoverFe';
   }
 
   fill("#A2D2FF");
@@ -82,203 +82,213 @@ function gameStage2() {
   //Checking for lose state (touching circle).
   if (mouseX > (width / 2) - 20 && mouseX < (width / 2) + 20) {
     if (mouseY > (height / 2) - 20 && mouseY < (height / 2) + 20) {
-      pageState = 'gameover';
+      pageState = 'gameoverFe';
     }
   }
 
   if (mouseX > (width / 1.8) - 250 && mouseX < (width / 1.8) + 250) {
     if (mouseY > (height / 1.1) - 250 && mouseY < (height / 1.1) + 250) {
-      pageState = 'gameover';
+      pageState = 'gameoverFe';
     }
   }
 
   if (mouseX > (width / 1.2) - 50 && mouseX < (width / 1.2) + 50) {
     if (mouseY > (height / 1.2) - 50 && mouseY < (height / 1.2) + 50) {
-      pageState = 'gameover';
+      pageState = 'gameoverFe';
     }
   }
 
   if (mouseX > (width / 3) - 40 && mouseX < (width / 3) + 40) {
     if (mouseY > (height / 3) - 40 && mouseY < (height / 3) + 40) {
-      pageState = 'gameover';
+      pageState = 'gameoverFe';
     }
   }
 
   if (mouseX > (width / 4) - 25 && mouseX < (width / 4) + 25) {
     if (mouseY > (height / 4) - 25 && mouseY < (height / 4) + 25) {
-      pageState = 'gameover';
+      pageState = 'gameoverFe';
     }
   }
 
   if (mouseX > (width / 5) - 50 && mouseX < (width / 5) + 50) {
     if (mouseY > (height / 5) - 50 && mouseY < (height / 5) + 50) {
-      pageState = 'gameover';
+      pageState = 'gameoverFe';
     }
   }
 
   if (mouseX > (width / 3) - 20 && mouseX < (width / 3) + 20) {
     if (mouseY > (height / 2) - 20 && mouseY < (height / 2) + 20) {
-      pageState = 'gameover';
+      pageState = 'gameoverFe';
     }
   }
 
   if (mouseX > (width / 5) - 25 && mouseX < (width / 5) + 25) {
     if (mouseY > (height / 1.1) - 25 && mouseY < (height / 1.1) + 25) {
-      pageState = 'gameover';
+      pageState = 'gameoverFe';
     }
   }
 
   if (mouseX > (width / 4) - 50 && mouseX < (width / 4) + 50) {
     if (mouseY > (height / 1.2) - 50 && mouseY < (height / 1.2) + 50) {
-      pageState = 'gameover';
+      pageState = 'gameoverFe';
     }
   }
 
   if (mouseX > (width / 5) - 35 && mouseX < (width / 5) + 35) {
     if (mouseY > (height / 5) - 35 && mouseY < (height / 5) + 35) {
-      pageState = 'gameover';
+      pageState = 'gameoverFe';
     }
   }
 
   if (mouseX > (width / 1.8) - 25 && mouseX < (width / 1.8) + 25) {
     if (mouseY > (height / 2) - 25 && mouseY < (height / 2) + 25) {
-      pageState = 'gameover';
+      pageState = 'gameoverFe';
     }
   }
 
   if (mouseX > (width / 1.6) - 50 && mouseX < (width / 1.6) + 50) {
     if (mouseY > (height / 3) - 50 && mouseY < (height / 3) + 50) {
-      pageState = 'gameover';
+      pageState = 'gameoverFe';
     }
   }
 
   if (mouseX > (width / 1.7) - 20 && mouseX < (width / 1.7) + 20) {
     if (mouseY > (height / 2.5) - 20 && mouseY < (height / 2.5) + 20) {
-      pageState = 'gameover';
+      pageState = 'gameoverFe';
     }
   }
 
   if (mouseX > (width / 1.4) - 25 && mouseX < (width / 1.4) + 25) {
     if (mouseY > (height / 1.5) - 25 && mouseY < (height / 1.5) + 25) {
-      pageState = 'gameover';
+      pageState = 'gameoverFe';
     }
   }
 
   if (mouseX > (width / 1.2) - 50 && mouseX < (width / 1.2) + 50) {
     if (mouseY > (height / 2.2) - 50 && mouseY < (height / 2.2) + 50) {
-      pageState = 'gameover';
+      pageState = 'gameoverFe';
     }
   }
 
   if (mouseX > (width / 1.3) - 35 && mouseX < (width / 1.3) + 35) {
     if (mouseY > (height / 2.3) - 35 && mouseY < (height / 2.3) + 35) {
-      pageState = 'gameover';
+      pageState = 'gameoverFe';
     }
   }
 
   if (mouseX > (width / 1.8) - 25 && mouseX < (width / 1.8) + 25) {
     if (mouseY > (height / 4) - 25 && mouseY < (height / 4) + 25) {
-      pageState = 'gameover';
+      pageState = 'gameoverFe';
     }
   }
 
   if (mouseX > (width / 3.3) - 50 && mouseX < (width / 3.3) + 50) {
     if (mouseY > (height / 1.5) - 50 && mouseY < (height / 1.5) + 50) {
-      pageState = 'gameover';
+      pageState = 'gameoverFe';
     }
   }
 
   if (mouseX > (width / 3.9) - 20 && mouseX < (width / 3.9) + 20) {
     if (mouseY > (height / 1.6) - 20 && mouseY < (height / 1.6) + 20) {
-      pageState = 'gameover';
+      pageState = 'gameoverFe';
     }
   }
 
   if (mouseX > (width / 5.2) - 25 && mouseX < (width / 5.2) + 25) {
     if (mouseY > (height / 4) - 25 && mouseY < (height / 4) + 25) {
-      pageState = 'gameover';
+      pageState = 'gameoverFe';
     }
   }
 
   if (mouseX > (width / 4.1) - 50 && mouseX < (width / 4.1) + 50) {
     if (mouseY > (height / 3) - 50 && mouseY < (height / 3) + 50) {
-      pageState = 'gameover';
+      pageState = 'gameoverFe';
     }
   }
 
   if (mouseX > (width / 2.1) - 35 && mouseX < (width / 2.1) + 35) {
     if (mouseY > (height / 6) - 35 && mouseY < (height / 6) + 35) {
-      pageState = 'gameover';
+      pageState = 'gameoverFe';
     }
   }
 
   if (mouseX > (width / 7.5) - 25 && mouseX < (width / 7.5) + 25) {
     if (mouseY > (height / 1.4) - 25 && mouseY < (height / 1.4) + 25) {
-      pageState = 'gameover';
+      pageState = 'gameoverFe';
     }
   }
 
   if (mouseX > (width / 3.2) - 50 && mouseX < (width / 3.2) + 50) {
     if (mouseY > (height / 5) - 50 && mouseY < (height / 5) + 50) {
-      pageState = 'gameover';
+      pageState = 'gameoverFe';
     }
   }
 
 
   if (mouseX > (width / 9) - 35 && mouseX < (width / 9) + 35) {
     if (mouseY > (height / 2.4) - 35 && mouseY < (height / 2.4) + 35) {
-      pageState = 'gameover';
+      pageState = 'gameoverFe';
     }
   }
 
   if (mouseX > (width / 12) - 250 && mouseX < (width / 12) + 250) {
     if (mouseY > (height / 4) - 250 && mouseY < (height / 4) + 250) {
-      pageState = 'gameover';
+      pageState = 'gameoverFe';
     }
   }
 
   if (mouseX > (width / 7) - 50 && mouseX < (width / 7) + 50) {
     if (mouseY > (height / 3.6) - 50 && mouseY < (height / 3.6) + 50) {
-      pageState = 'gameover';
+      pageState = 'gameoverFe';
     }
   }
 
   if (mouseX > (width / 1.1) - 250 && mouseX < (width / 1.1) + 250) {
     if (mouseY > (height / 10) - 250 && mouseY < (height / 10) + 250) {
-      pageState = 'gameover';
+      pageState = 'gameoverFe';
     }
   }
 
   if (mouseX > (width / 1.3) - 35 && mouseX < (width / 1.3) + 35) {
     if (mouseY > (height / 6) - 35 && mouseY < (height / 6) + 35) {
-      pageState = 'gameover';
+      pageState = 'gameoverFe';
     }
   }
 
   if (mouseX > (width / 1.5) - 20 && mouseX < (width / 1.5) + 20) {
     if (mouseY > (height / 8) - 20 && mouseY < (height / 8) + 20) {
-      pageState = 'gameover';
+      pageState = 'gameoverFe';
     }
   }
 
   if (mouseX > (width / 1) - 25 && mouseX < (width / 1) + 25) {
     if (mouseY > (height / 1.5) - 25 && mouseY < (height / 1.5) + 25) {
-      pageState = 'gameover';
+      pageState = 'gameoverFe';
     }
   }
 
   if (mouseX > (width / 1.3) - 35 && mouseX < (width / 1.3) + 35) {
     if (mouseY > (height / 3.3) - 35 && mouseY < (height / 3.3) + 35) {
-      pageState = 'gameover';
+      pageState = 'gameoverFe';
     }
   }
 
   if (mouseX > (width / 1.7) - 20 && mouseX < (width / 1.7) + 20) {
     if (mouseY > (height / 5.5) - 20 && mouseY < (height / 5.5) + 20) {
-      pageState = 'gameover';
+      pageState = 'gameoverFe';
     }
   }
+}
 
+function gameOverFemale() {
+  background("#CDB4DB");
+  stroke(255);
+  fill(255);
+  textSize(75);
+  textAlign(CENTER);
+  text('GAME OVER', width * 0.5, height * 0.33);
+  textSize(25);
+  text("Press 'W' To Go to Artist's Statement", width * 0.5, height * 0.66);
 }
 
 //Function for rendering game over screen.

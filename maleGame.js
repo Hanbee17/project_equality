@@ -45,7 +45,7 @@ function gameStage1() {
 
 //Function for rendering game over screen.
 function gameOver() {
-  background("#CDB4DB");
+  background("#A2D2FF");
   stroke(255);
   fill(255);
   textSize(75);

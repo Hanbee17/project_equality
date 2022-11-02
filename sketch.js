@@ -36,6 +36,9 @@ function draw() {
     case 'gameover':
       gameOver();
       break;
+      case 'gameoverFe':
+        gameOverFemale();
+        break;
     case 'femalegame':
       titleScreen2();
       break;
@@ -52,17 +55,23 @@ function draw() {
 }
 
 function keyReleased() {
-  if (pageState === 'malegame' || pageState === 'femalegame' || pageState === 'gameover') {
+  if (pageState === 'malegame' || pageState === 'gameover') {
     if (key === 's' || key === 'S') {
       pageState = 'maleMainGame';
-    } else if (key === 'f' || key === 'S') {
-      pageState = 'femaleMainGame';
     }
+}
+}
+
+function keyTyped() {
+  if (pageState === 'femalegame' || pageState === 'gameoverFe') {
+  if (key === 'f') {
+    pageState = 'femaleMainGame';
   }
+}
 }
 
 function keyPressed() {
-  if (pageState === 'gameover') {
+  if (pageState === 'gameover'|| pageState === 'gameoverFe') {
     if (key === 'w') {
       pageState = 'artsistStatement';
     }
@@ -87,8 +96,8 @@ function firstScreen() {
   createCanvas(windowWidth * 1, windowHeight * 0.82);
   background(220);
   startButton();
-  let p = createP(textFront);
-  p.id('myFrontText');
+  // let p = createP(textFront);
+  // p.id('myFrontText');
 }
 
 function questionPage() {
