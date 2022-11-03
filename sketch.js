@@ -88,6 +88,7 @@ function intialButtons() {
   initialButton.text = "Click To Start";
   initialButton.onRelease = function() {
     pageState = 'main'
+    removeElements();
     initialButton.locate(-400, -500);
   }
 }
@@ -101,9 +102,9 @@ function firstScreen() {
   fill(255);
   textSize(100);
   textFont('Bebas Neue');
-  text('Click Anywhere To Begin', width * 0.5, height * 0.5);
-  // let p = createP(textFront);
-  // p.id('myFrontText');
+  //text('Click Anywhere To Begin', width * 0.5, height * 0.5);
+  let p = createP(textFront);
+  p.id('myFrontText');
 }
 
 function questionPage() {
